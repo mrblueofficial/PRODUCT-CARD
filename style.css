@@ -1,0 +1,68 @@
+/* Scrollbar styling */
+.cards-row::-webkit-scrollbar {
+    height: 4px;
+}
+.cards-row::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+    transition: height 0.3s;
+}
+.cards-row:hover::-webkit-scrollbar-thumb {
+    height: 6px;
+}
+
+/* Product card overrides */
+.product-card {
+    width: 220px !important;   /* Fixed neat width */
+    height: 320px !important;  /* Fixed neat height */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #e5e7eb; /* Light border */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* Product image fits proportionally */
+.product-card img {
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Badge styling */
+.badge {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background: #1e293b;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+}
+
+/* Price text */
+.price {
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
+/* Layout for extra products */
+.more-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* On larger screens, keep them in a row like normal */
+@media (min-width: 640px) {
+    .more-wrapper {
+        display: flex;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Best Sellers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-slate-900">
+  <main class="min-h-screen p-8 lg:p-12">
+    <section class="max-w-7xl mx-auto bg-white rounded-md shadow-sm p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-bold">Best Sellers</h2>
+        <a class="text-sm text-slate-500 hover:text-slate-700" href="#">Shop All The Best Sellers →</a>
+      </div>
+
+      <!-- Horizontal scroll container -->
+      <div class="flex gap-4 overflow-x-auto scrollbar-hide py-3 cards-row flex-wrap sm:flex-nowrap">
+        
+        <!-- First 4 products -->
+        <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+          <div class="relative">
+            <img class="w-full h-40 object-cover product-image" src="assets/images/banana.avif" data-alt="assets/images/can.avif" />
+            <span class="absolute top-2 left-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded">BEST SELLER</span>
+          </div>
+          <div class="p-3">
+            <h3 class="text-sm font-semibold">Banana Vibes</h3>
+            <p class="text-xs text-gray-500">★★★★★ • 1,234 Reviews</p>
+            <div class="text-sm font-bold mt-1">$104.95</div>
+          </div>
+        </div>
+
+        <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+          <div class="relative">
+            <img class="w-full h-40 object-cover product-image" src="assets/images/bmw.avif" data-alt="assets/images/lens.avif" />
+            <span class="absolute top-2 left-2 bg-red-500 text-xs font-bold px-2 py-1 rounded">HOT</span>
+          </div>
+          <div class="p-3">
+            <h3 class="text-sm font-semibold">BMW Model Car</h3>
+            <p class="text-xs text-gray-500">★★★★★ • 823 Reviews</p>
+            <div class="text-sm font-bold mt-1">$149.95</div>
+          </div>
+        </div>
+
+        <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+          <div class="relative">
+            <img class="w-full h-40 object-cover product-image" src="assets/images/cologne.avif" data-alt="assets/images/gloss.avif" />
+            <span class="absolute top-2 left-2 bg-green-500 text-xs font-bold px-2 py-1 rounded">NEW</span>
+          </div>
+          <div class="p-3">
+            <h3 class="text-sm font-semibold">Luxury Cologne</h3>
+            <p class="text-xs text-gray-500">★★★★★ • 412 Reviews</p>
+            <div class="text-sm font-bold mt-1">$59.95</div>
+          </div>
+        </div>
+
+        <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+          <div class="relative">
+            <img class="w-full h-40 object-cover product-image" src="assets/images/gloss.avif" data-alt="assets/images/cologne.avif" />
+            <span class="absolute top-2 left-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded">BEST SELLER</span>
+          </div>
+          <div class="p-3">
+            <h3 class="text-sm font-semibold">Lip Gloss</h3>
+            <p class="text-xs text-gray-500">★★★★★ • 1,122 Reviews</p>
+            <div class="text-sm font-bold mt-1">$29.95</div>
+          </div>
+        </div>
+
+        <!-- Hidden products for mobile -->
+        <div class="more-wrapper hidden w-full sm:flex sm:w-auto gap-4 flex-wrap sm:flex-nowrap">
+          <!-- Remaining 6 products -->
+          <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+            <div class="relative">
+              <img class="w-full h-40 object-cover product-image" src="assets/images/shoe.avif" data-alt="assets/images/shoes.avif" />
+              <span class="absolute top-2 left-2 bg-red-500 text-xs font-bold px-2 py-1 rounded">HOT</span>
+            </div>
+            <div class="p-3">
+              <h3 class="text-sm font-semibold">Sporty Shoe</h3>
+              <p class="text-xs text-gray-500">★★★★★ • 3,004 Reviews</p>
+              <div class="text-sm font-bold mt-1">$89.95</div>
+            </div>
+          </div>
+
+          <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+            <div class="relative">
+              <img class="w-full h-40 object-cover product-image" src="assets/images/shoes.avif" data-alt="assets/images/shoe.avif" />
+              <span class="absolute top-2 left-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded">BEST SELLER</span>
+            </div>
+            <div class="p-3">
+              <h3 class="text-sm font-semibold">Casual Sneakers</h3>
+              <p class="text-xs text-gray-500">★★★★★ • 980 Reviews</p>
+              <div class="text-sm font-bold mt-1">$99.95</div>
+            </div>
+          </div>
+
+          <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+            <div class="relative">
+              <img class="w-full h-40 object-cover product-image" src="assets/images/camera.avif" data-alt="assets/images/lens.avif" />
+              <span class="absolute top-2 left-2 bg-green-500 text-xs font-bold px-2 py-1 rounded">NEW</span>
+            </div>
+            <div class="p-3">
+              <h3 class="text-sm font-semibold">Pro Camera</h3>
+              <p class="text-xs text-gray-500">★★★★★ • 678 Reviews</p>
+              <div class="text-sm font-bold mt-1">$599.95</div>
+            </div>
+          </div>
+
+          <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+            <div class="relative">
+              <img class="w-full h-40 object-cover product-image" src="assets/images/headsets.avif" data-alt="assets/images/sunglasses.avif" />
+              <span class="absolute top-2 left-2 bg-red-500 text-xs font-bold px-2 py-1 rounded">HOT</span>
+            </div>
+            <div class="p-3">
+              <h3 class="text-sm font-semibold">Wireless Headsets</h3>
+              <p class="text-xs text-gray-500">★★★★★ • 1,587 Reviews</p>
+              <div class="text-sm font-bold mt-1">$79.95</div>
+            </div>
+          </div>
+
+          <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+            <div class="relative">
+              <img class="w-full h-40 object-cover product-image" src="assets/images/sunglasses.avif" data-alt="assets/images/headsets.avif" />
+              <span class="absolute top-2 left-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded">BEST SELLER</span>
+            </div>
+            <div class="p-3">
+              <h3 class="text-sm font-semibold">Stylish Sunglasses</h3>
+              <p class="text-xs text-gray-500">★★★★★ • 324 Reviews</p>
+              <div class="text-sm font-bold mt-1">$59.95</div>
+            </div>
+          </div>
+
+          <div class="product-card min-w-[180px] bg-white border rounded-lg shadow hover:shadow-lg transition">
+            <div class="relative">
+              <img class="w-full h-40 object-cover product-image" src="assets/images/can.avif" data-alt="assets/images/banana.avif" />
+              <span class="absolute top-2 left-2 bg-green-500 text-xs font-bold px-2 py-1 rounded">NEW</span>
+            </div>
+            <div class="p-3">
+              <h3 class="text-sm font-semibold">Energy Drink</h3>
+              <p class="text-xs text-gray-500">★★★★★ • 246 Reviews</p>
+              <div class="text-sm font-bold mt-1">$14.95</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show More button (mobile only) -->
+      <div class="mt-4 block sm:hidden">
+        <button id="showMoreBtn" class="w-full bg-gray-200 px-4 py-2 rounded text-sm font-semibold">
+          Show More
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
